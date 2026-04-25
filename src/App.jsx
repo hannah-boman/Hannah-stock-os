@@ -12,7 +12,7 @@ const defaultData = {
     { id: 5, name: "실리콘투", code: "257720", market: "KOSDAQ", qty: 100, avgPrice: 46250, currentPrice: 48900, purpose: "K뷰티 글로벌 유통 성장", scenario: "미국/유럽 채널 확대 → 매출 급증", stopLoss: "외국인 연속 매도 + 실적 하회", addBuy: "2차 눌림목 확인 + 기관 재진입", target: 65000, theme: "K뷰티/소비재", conviction: 3, sector: "소비재" },
     { id: 6, name: "케이피에프", code: "024880", market: "KOSPI", qty: 100, avgPrice: 15000, currentPrice: 12500, purpose: "외국인 3일 연속 매수 + 저평가", scenario: "실적 회복 + 기관 매수 유입 시 반등", stopLoss: "외국인 매수 중단 + 지지선 이탈", addBuy: "외국인 4일 이상 연속 매수 확인", target: 18000, theme: "산업재", conviction: 2, sector: "산업재" },
   ],
-  trades: [realizedTrades.push(
+trades: [
   {date:"2026-02-04",market:"KR",type:"국내주식",name:"엘오티베큠",profit:-22283,returnRate:-44.1,sellAmount:28280,buyAmount:50500},
   {date:"2026-02-04",market:"KR",type:"국내주식",name:"제이엔케이글로벌",profit:-27986,returnRate:-42.1,sellAmount:38500,buyAmount:66400},
   {date:"2026-02-04",market:"KR",type:"국내주식",name:"경보제약",profit:-33682,returnRate:-34.4,sellAmount:64240,buyAmount:97780},
@@ -80,21 +80,15 @@ const defaultData = {
   {date:"2026-01-19",market:"KR",type:"국내주식",name:"인벤티아 10R",profit:12911,returnRate:0.0,sellAmount:12936,buyAmount:0},
   {date:"2026-01-19",market:"KR",type:"국내주식",name:"동일기연",profit:12562,returnRate:4.1,sellAmount:318800,buyAmount:305600},
   {date:"2026-01-14",market:"KR",type:"국내주식",name:"한화갤러리아",profit:682307,returnRate:11.9,sellAmount:6390680,buyAmount:5694738}
-);
-    { id: 1, date: "2026-04-10", name: "실리콘투", type: "매수", qty: 100, price: 46250, total: 4625000, market: "장중 외국인 매수 강세", reason: "외국인 3일 연속 순매수 + 거래량 급증", entry: "기관 동반 매수 + 눌림목 2차 지지 확인", exit: "", emotion: "차분", result: "보유중", score: 8, review: "계획된 매매. 손절선 명확히 설정 후 진입" },
-    { id: 2, date: "2026-04-08", name: "한미반도체", type: "매수", qty: 20, price: 295000, total: 5900000, market: "엔비디아 실적 서프라이즈 다음날", reason: "HBM 수혜 직접 수혜 + 수주 기대", entry: "갭상승 후 눌림목에서 매수", exit: "", emotion: "확신", result: "보유중", score: 7, review: "시나리오 명확. 다만 추격 요소 있었음" },
-  ],
+],
+watchlist: [
+ 
+],
   news: [
-    { id: 1, date: "2026-04-18", source: "WSJ", title: "Fed Officials Signal Patience on Rate Cuts Amid Tariff Uncertainty", summary: "연준 위원들, 관세 불확실성 속 금리 인하 서두르지 않겠다 시사", keywords: ["금리", "연준", "관세"], stocks: ["전반적 부정"], sector: "거시경제", issueType: "금리", importance: "높음", marketImpact: "미국증시 부정", myJudge: "단기 기술주 압박. 반도체 비중 점검 필요", needFollowUp: true },
-    { id: 2, date: "2026-04-17", source: "한국경제", title: "외국인, 반도체 장비주 3주 연속 순매수", summary: "외국인 투자자 한미반도체·HPSP 등 장비주 집중 매수 지속", keywords: ["외국인", "반도체", "장비"], stocks: ["한미반도체"], sector: "반도체", issueType: "수급", importance: "높음", marketImpact: "특정 종목 긍정", myJudge: "한미반도체 보유 긍정. 추가매수 검토", needFollowUp: false },
+   
   ],
   calendar: [
-    { id: 1, date: "2026-04-18", country: "미국", event: "연준 베이지북 발표", type: "통화정책", result: "경기 완만한 성장, 물가 소폭 둔화", reaction: "증시 보합", relatedStocks: "전반", portfolioImpact: "중립", importance: "중간" },
-    { id: 2, date: "2026-04-16", country: "미국", event: "3월 소매판매", type: "경제지표", result: "예상치 하회 (-0.2%)", reaction: "달러 약세, 기술주 반등", relatedStocks: "소비재, 기술주", portfolioImpact: "한미반도체 소폭 긍정", importance: "높음" },
-  ],
-  stockMaster: [
-    { id: 1, name: "두산에너빌리티", code: "034020", sector: "에너지", industry: "발전설비", theme: "원자력,원전수출", keyPoint: "원전 수주 파이프라인 + 두산밥콕 시너지", competitor: "한전기술,비에이치아이", sensitivity: "원전정책,환율,수주공시", checkIndicator: "수주잔고,영업이익률", newsKeyword: "원전,SMR,체코,폴란드" },
-    { id: 2, name: "한미반도체", code: "042700", sector: "반도체", industry: "반도체장비", theme: "HBM,AI반도체", keyPoint: "HBM 패키징 장비 독점적 위치", competitor: "ASMPT,Besi", sensitivity: "엔비디아수주,HBM수요,환율", checkIndicator: "수주잔고,마진율", newsKeyword: "HBM,엔비디아,SK하이닉스,TC본더" },
+
   ],
   aiInputs: [],
   monthlyReview: [],
